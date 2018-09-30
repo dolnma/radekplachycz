@@ -2,7 +2,7 @@
     font-size: 1.4rem;
     line-height: 2rem;
 
-    hr {
+    &__hr {
 
         @include break(sm) {
             display: none;

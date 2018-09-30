@@ -18,7 +18,7 @@ const IndexPage = props => (
       </div>
     </div>
     <div className="content container">
-    <hr className="mt-2 mt-4-lg" />
+    <hr className="mt-2 mt-4-lg content__hr" />
       <h2 className="text-center pt-2 p-1 p-lg-2"><b>Tě bůh lidi,</b></h2>
       <p>
         jmenuji se Radovan Plachý a momentálně mě můžete slyšet na rádiu Impuls.
