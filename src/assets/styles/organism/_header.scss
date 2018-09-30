@@ -6,25 +6,9 @@
         justify-content: center;
     }
 
-    &__logo {
-        height: auto;
-
-        img {
-            width: 100%;
-        }
-
-        picture {
-            width: 100%;
-
-            img {
-                width: 100%;
-            }
-        }
-    }
-
     &__phone {
         text-align: center;
-        
+
         p {
             font-size: 1.5rem;
         }
@@ -32,14 +16,30 @@
         h1 {
             font-size: 3.5rem;
             line-height: 3.8rem;
+
+            @include break(lg) {
+                font-size: 4.5rem;
+                line-height: 5rem;
+            }
+
+            @include break(xl) {
+                font-size: 5.5rem;
+                line-height: 6rem;
+            }
         }
 
-        &__url {
+        &__name {
             display: none;
 
-            @include break(sm) {
+            @include break(xs) {
                 display: block;
             }
         }
+    }
+
+    &__logo  {
+        display: flex;
+        justify-content: center;
+
     }
 }

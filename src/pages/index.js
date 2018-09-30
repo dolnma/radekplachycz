@@ -9,11 +9,15 @@ const IndexPage = props => (
   <div className="homepage text--secondary">
     <div className="header">
       <div className="container row header__wrap">
-        <Img className="header__logo" fixed={props.data.imageOne.childImageSharp.fixed} />
-        <div className="header__phone ml-md-2 mt-md-6">
+      <div className="col-12 col-md-6 header__logo">
+        <Img fixed={props.data.imageOne.childImageSharp.fixed} style={{ position: `relative`}} />
+        </div>
+        <div className="col-12 col-md-6">
+        <div className="header__phone ml-md-2 mt-sm-6 mt-xl-5">
           <p className="text--secondary mb-md-1 f-2">telefon</p>
-          <h1 className="text--secondary mb-md-1"><b>777 110 065</b></h1>
-          <p className="text--secondary f-2 header__phone__url">radekplachy.cz</p>
+          <h1 className="text--secondary mb-md-1 text--third"><b>777 110 065</b></h1>
+          <p className="text--secondary f-2 header__phone__name">Numerolog Radovan Plachý</p>
+        </div>
         </div>
       </div>
     </div>
@@ -63,6 +67,7 @@ const IndexPage = props => (
     </div>
   </div>
 </Layout>
+
 )
 
 export default IndexPage
@@ -71,8 +76,8 @@ export const pageQuery = graphql`
   query {
     imageOne: file(relativePath: { eq: "logo.png" }) {
       childImageSharp {
-        fixed(width: 500) {
-          ...GatsbyImageSharpFixed_noBase64
+        fixed(width: 800) {
+          ...GatsbyImageSharpFixed
         }
       }
     }
