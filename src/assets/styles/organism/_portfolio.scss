@@ -1,0 +1,14 @@
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+
+    &--bg {
+        background-image: linear-gradient($primary, darken($primary, 50%));
+    }
+
+    @include break(sm) {
+        font-size: 2rem;
+    }
+}

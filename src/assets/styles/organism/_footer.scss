@@ -1,0 +1,18 @@
+.footer {
+    background-color: darken($primary, 75%);
+    font-size: 1.2rem;
+
+    @include break(sm) {
+        background-color: darken($primary, 50%);
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        @include break(xs) {
+            flex-direction: row;
+        }
+    }
+}

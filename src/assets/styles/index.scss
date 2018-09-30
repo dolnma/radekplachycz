@@ -4,4 +4,13 @@
 @import 'assets/normalize';
 @import 'assets/resetcss';
 
+@import 'mixins';
+
+@import 'atoms/text';
+
+@import 'organism/header';
+@import 'organism/content';
+@import 'organism/portfolio';
+@import 'organism/footer';
+
 @import 'pages/homepage';

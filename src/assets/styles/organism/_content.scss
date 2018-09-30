@@ -1,0 +1,16 @@
+.content {
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+    hr {
+
+        @include break(sm) {
+            display: none;
+        }
+    }
+
+    @include break(sm) {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+}
